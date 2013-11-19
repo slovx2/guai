@@ -68,7 +68,7 @@
       <file leaf-file-name="page.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/page.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="34" selection-start="379" selection-end="379" vertical-scroll-proportion="0.49393415">
+            <state line="18" column="40" selection-start="454" selection-end="454" vertical-scroll-proportion="0.592721">
               <folding />
             </state>
           </provider>
@@ -325,7 +325,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../N-blog-master" />
     <property name="FullScreen" value="false" />
@@ -615,7 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/page.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="34" selection-start="379" selection-end="379" vertical-scroll-proportion="0.49393415">
+        <state line="18" column="40" selection-start="454" selection-end="454" vertical-scroll-proportion="0.592721">
           <folding />
         </state>
       </provider>
