@@ -7,7 +7,7 @@
  */
 
 
-var Deco = require('../model/Deco');
+//var Deco = require('../model/Deco');
 var Equip = require('../model/Equip');
 exports.deco = function(req, res){
     res.render('deco', {decos: Equip.arms});
