@@ -10,5 +10,5 @@ exports.index = function(req, res){
 //        var skill = Skill.skills[i];
 //        console.log(typeof skill);
 //    }
-    res.render('page', { skills: Skill.positives, columnNumber : 3});
+    res.render('page', { skills: Skill.positives, columnNumber : 4});
 };

@@ -5,8 +5,8 @@
     <style>
     body { margin:0;}
     #content { width:80%; margin:0 auto;}
-    #skill { height: 100%; width: 30%; float: left; }
-    #main { height: 100%; margin: 0px; }
+    #skill { height: 100%; width: 40%; float: left; }
+    #main { height: 100%; margin :0 0 0 40% }
     </style>
     <title></title>
 </head>
@@ -24,7 +24,7 @@
         <%
                 }
         %>
-        <td><input type="checkbox" name="<%=skill.name%>" /><%=skill.name%></td>
+        <td><input type="checkbox" id="<%=skill.name%>" onclick="onSkillClick(this)"/><%=skill.name%></td>
         <%
 
                 if (i % columnNumber == columnNumber - 1) {
@@ -39,7 +39,15 @@
 </div>
 
     <div id="main">
-             awer sdfawer
+    <form method="post" action="search" id="form">
+    <input type="hidden" name="skills"/>
+            <div>
+                <ul id="select">
+
+                </ul>
+            <input type="submit" value="搜索"/>
+            </div>
+    </form>
     </div>
 </div>
 </body>
