@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/javascripts/home.js" type="text/javascript"></script>
+    <style>
+    body { margin:0;}
+    #content { width:80%; margin:0 auto;}
+    #skill { height: 100%; width: 30%; float: left; }
+    #main { height: 100%; margin: 0px; }
+    </style>
+    <title></title>
+</head>
+<body>
+<div id="content">
+<div id="skill">
+    <table border="1">
+        <%
+            var i = 0;
+            for (var skillName in skills) {
+                var skill = skills[skillName];
+                if (i % columnNumber == 0) {
+        %>
+                <tr>
+        <%
+                }
+        %>
+        <td><input type="checkbox" name="<%=skill.name%>" /><%=skill.name%></td>
+        <%
+
+                if (i % columnNumber == columnNumber - 1) {
+        %>
+                </tr>
+        <%
+                }
+                i++;
+            }
+        %>
+    </table>
+</div>
+
+    <div id="main">
+             awer sdfawer
+    </div>
+</div>
+</body>
+</html>

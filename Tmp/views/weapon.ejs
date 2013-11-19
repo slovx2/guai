@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <link rel="stylesheet" href="/stylesheets/dtree.css">
+<script src="/javascripts/dtree.js" type="text/javascript"></script>
+<%if(!array) {%>
+    <h2>No such weapon</h2>
+<%} else {%>
+    <h2><%=name%></h2>
+
+    <div id="dtree">
+    <p><a href="javascript: d.openAll();">open all</a> | <a href="javascript: d.closeAll();">close all</a></p>
+
+    <script type="text/javascript">
+        d = new dTree('d');
+            <%for (var i = 0; i < array.length; i++) {
+                var make = array[i].make;
+                var str = array[i].name + ": ";
+                for (var j in make) {
+                    str += item[make[j]].name + ", ";
+                }
+            %>
+        d.add(<%=array[i].id%>, <%=array[i].parent%>, "<%=str%>");
+            <%}%>
+        document.write(d);
+    </script>
+
+    </div>
+<%}%>
+
+</body>
+</html>

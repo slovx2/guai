@@ -1,0 +1,24 @@
+#left {
+	float: left;
+	height: auto;
+	width: 150px;
+}
+#weapon {
+	background-color: #00FF66;
+}
+.ul {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.li {
+	font-size: large;
+	font-weight: lighter;
+	text-transform: lowercase;
+}
+#main {
+	display:inline;
+	background-color: #CC00FF;
+	clear: both;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/javascripts/home.js" type="text/javascript"></script>
+    <title></title>
+</head>
+<body>
+
+<table border="1">
+    <%
+        for (var decoName in decos) {
+            var deco = decos[decoName];
+    %>
+    <tr>
+    <td><%=deco.name%></td>
+    <td>
+    <%
+            var skillSyss = deco.skillSyss;
+            for (var i in skillSyss) {
+                var skillSys = skillSyss[i];
+    %>
+    <%=skillSys.name%> : <%=skillSys.value%>
+    <%
+            }
+    %>
+    </td>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>
+    <%
+            var makes = deco.makes;
+            for (var j in makes) {
+                var make = makes[j];
+                for (var k = 0; k < make.getCount(); k++) {
+                    var makeIn = make.get(k);
+
+    %>
+        <%=makeIn.name%>*<%=makeIn.count%>、
+    <%
+                }
+            }
+    %>
+    </td>
+    </tr>
+    <%
+        }
+    %>
+</table>
+
+</body>
+</html>
