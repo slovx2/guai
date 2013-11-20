@@ -1,15 +1,12 @@
 
 var selectElement;
+var skills = {};
 function onSkillClick(checkbox) {
     if (!selectElement) {
         selectElement = document.getElementById('select')
     }
     var liId = "li_" + checkbox.id;
     var form = document.getElementById('form');
-    if (typeof form.elements['skills'].value != "Object") {
-        form.elements['skills'].value = {};
-    }
-    var skills = form.elements['skills'].value;
     if (checkbox.checked) {
         var node = document.createElement("li");
         var text = document.createTextNode(checkbox.id);
@@ -21,4 +18,5 @@ function onSkillClick(checkbox) {
         skills[checkbox.id] = undefined;
         selectElement.removeChild(document.getElementById(liId));
     }
+    form.elements['skills'].value = JSON.stringify(skills);
 }
