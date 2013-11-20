@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="413ac5f5-5aea-42f4-84e0-2b744d638f12" name="Default" comment="页面">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/json2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/home.js" afterPath="$PROJECT_DIR$/public/javascripts/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/page.ejs" afterPath="$PROJECT_DIR$/views/page.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/post.js" afterPath="$PROJECT_DIR$/routes/post.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../N-blog-master/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../N-blog-master/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,8 +32,8 @@
     <file path="/app.js" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384846947260" ignored="false" />
     <file path="/Equip.js" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384768875419" ignored="false" />
     <file path="/Defense.js" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384769399880" ignored="false" />
-    <file path="/Dummy.txt" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384914783130" ignored="false" />
-    <file path="/post.js" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384917273865" ignored="false" />
+    <file path="/Dummy.txt" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384919357561" ignored="false" />
+    <file path="/post.js" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384943166755" ignored="false" />
     <file path="/util.js" changelist="413ac5f5-5aea-42f4-84e0-2b744d638f12" time="1384917365399" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,15 +54,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="8" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="page.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/page.ejs">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,19 +99,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <file leaf-file-name="post.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="11" selection-start="282" selection-end="285" vertical-scroll-proportion="0.0">
+            <state line="17" column="48" selection-start="477" selection-end="477" vertical-scroll-proportion="0.43377483">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/post.js">
+      <file leaf-file-name="Deco.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Deco.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="30" selection-start="34" selection-end="34" vertical-scroll-proportion="0.031456955">
+            <state line="21" column="43" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Equip.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Equip.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="20" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Skill.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Skill.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="12" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,15 +142,6 @@
               <folding>
                 <element signature="e#0#158#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/list.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="34" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -173,13 +169,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/deco.ejs" />
         <option value="$PROJECT_DIR$/data/Engg" />
         <option value="$PROJECT_DIR$/routes/weapon.js" />
         <option value="$PROJECT_DIR$/model/Make.js" />
         <option value="$PROJECT_DIR$/model/Defense.js" />
-        <option value="$PROJECT_DIR$/model/Skill.js" />
-        <option value="$PROJECT_DIR$/model/Equip.js" />
         <option value="$PROJECT_DIR$/routes/list.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/app.js" />
@@ -187,8 +180,11 @@
         <option value="$PROJECT_DIR$/views/page.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/home.js" />
         <option value="$PROJECT_DIR$/Util.js" />
-        <option value="$PROJECT_DIR$/routes/post.js" />
         <option value="$PROJECT_DIR$/util/util.js" />
+        <option value="$PROJECT_DIR$/model/Skill.js" />
+        <option value="$PROJECT_DIR$/model/Deco.js" />
+        <option value="$PROJECT_DIR$/model/Equip.js" />
+        <option value="$PROJECT_DIR$/routes/post.js" />
       </list>
     </option>
   </component>
@@ -322,6 +318,11 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
+    <configuration default="false" name="post.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="post.js" working-dir="$PROJECT_DIR$/routes">
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -340,13 +341,15 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.data.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.post.js" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.data.js" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.post.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.data.js" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +385,11 @@
       <created>1384850994730</created>
       <updated>1384850994730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="实现页面提交json回服务器">
+      <created>1384919372143</created>
+      <updated>1384919372143</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -409,6 +416,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -423,7 +431,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275488" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -471,7 +478,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现页面提交json回服务器" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -487,6 +494,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="测试提交" />
     <MESSAGE value="页面" />
+    <MESSAGE value="实现页面提交json回服务器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -500,25 +508,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model/Equip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/deco.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="72" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.WebStorm6/system/extLibs/nodejs-v0.10.21-src/core-modules-sources/lib/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="117" column="9" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.14403974">
@@ -605,9 +594,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/Deco.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="43" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Equip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="20" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Skill.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="34" selection-end="34" vertical-scroll-proportion="0.031456955">
+        <state line="17" column="48" selection-start="477" selection-end="477" vertical-scroll-proportion="0.43377483">
           <folding />
         </state>
       </provider>
