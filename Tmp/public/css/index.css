@@ -1,0 +1,19 @@
+body{
+	margin:0 auto;
+	padding:0;
+	font-family:"微软雅黑";
+	font-size:11px;
+	width:100%;
+	background:url(../images/bg02.jpg) no-repeat;
+	background-position:center;
+
+}
+div{
+	margin:0;
+	padding:0;
+}
+#container{
+	width:960px;
+	margin:0 auto;
+	padding:0px;
+}
