@@ -1,16 +1,18 @@
 var g_Interval = 10;
 var g_Timer;
 var running = false;
-var teamA;
-var teamB;
-var teamC;
+var teamA, teamB, teamC;
+var countA = 0, countB = 0, countC = 0;
+var tempA = 0, tempB = 0, tempC = 0;
 
 var currentTeam;
 var currentTrigger;
 var currentNum;
+var currentCount;
 
 var teamName;
-var BType;
+
+var result;
 
 window.onload = function() {
     teamA = A.split('\n');
@@ -21,28 +23,38 @@ window.onload = function() {
 function beginRndNum(trigger){
     if (running) {
         if (currentTrigger != trigger) return;
+        console.log(currentNum);
+        if (teamName == 'A') {
+            $('#numA').text('' + ++countA);
+            $('#tempA').text('' + ++tempA);
+        } else if (teamName == 'B') {
+            $('#numB').text('' + ++countB);
+            $('#tempB').text('' + ++tempB);
+        } else if (teamName == 'C') {
+            $('#numC').text('' + ++countC);
+            $('#tempC').text('' + ++tempC);
+        }
+        $('#text').text($('#text').text() + result + '\n');
+        var ta = document.getElementById('text');
+        ta.scrollTop = ta.scrollHeight;
         currentTeam.splice(currentNum, 1);
         running = false;
         clearTimeout(g_Timer);
         $('#ResultNum').css('color','red');
-        if (BType == 1) {
-            $(trigger).css('background','url(images/top01.png) no-repeat');
-        } else if (BType == 2) {
-            $(trigger).css('background','url(images/top02.png) no-repeat');
-        } else if (BType == 3) {
-            $(trigger).css('background','url(images/top03.png) no-repeat');
-        }
+        $(trigger).css('background','url(images/top01.png) no-repeat');
     }
     else {
         currentTrigger = trigger;
         running = true;
-        teamName = trigger.id.charAt(0);
-        BType = trigger.id.charAt(1);
+        teamName = trigger.id;
         if (teamName == 'A') {
             currentTeam = teamA;
+            currentCount = countA;
         } else if (teamName == 'B') {
             currentTeam = teamB;
+            currentCount = countB;
         } else if (teamName == 'C') {
+            currentCount = countC;
             currentTeam = teamC;
         }
         $('#ResultNum').css('color','black');
@@ -53,8 +65,14 @@ function beginRndNum(trigger){
 }
 
 function updateRndNum(team){
-    var num = Math.floor(Math.random() * team.length + 1);
-    $('#ResultNum').html(team[num]);
+    var temp;
+    var num;
+    while (!temp) {
+        num = Math.floor(Math.random() * team.length + 1);
+        temp = team[num]
+    }
+    result = temp;
+    $('#ResultNum').html(result);
     currentNum = num;
 }
 
@@ -65,4 +83,15 @@ function beginTimer(){
 function beat() {
     g_Timer = setTimeout(beat, g_Interval);
     updateRndNum(currentTeam);
+}
+
+function clearReco() {
+    $('#text').text("");
+    tempA = 0;
+    tempB = 0;
+    tempC = 0;
+    $('#tempA').text('0');
+    $('#tempB').text('0');
+    $('#tempC').text('0');
+    $('#ResultNum').text('');
 }

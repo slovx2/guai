@@ -17,3 +17,9 @@ div{
 	margin:0 auto;
 	padding:0px;
 }
+#countNum{
+	border:#000;
+	width:20px;
+	height:20px;
+	float:left;
+}

@@ -28,22 +28,29 @@ function afterSvnInfo(code) {
         var newName = APK_NAME_PREFIX + "_" + version + "_svn_" + revision + ".apk";
         fs.rename('bin/' + APK_NAME_RAW, 'bin/' + newName, function (err) {
             if (err) throw err;
-            console.log('重命名完成');
+            console.log('Rename completed');
         });
     }
 }
 
 function afterPackage(code) {
     if (code == 0) {
-        console.log('打包成功，开始获取svn号');
+        var buffer = "";
+        console.log('Get revision.....');
         var p_svnInfo = spawn('cmd.exe', ['/c', 'svn', 'info']);
         p_svnInfo.stdout.on('data', function (data) {
+            buffer += data;
             var info = data + "";
             var lines = info.split('\n');
-            var re = /[0-9]+/;
-            var atts = re.exec(lines[5]);
-            revision = atts[0];
-            console.log('版本号为：' + revision);
+            var re = /Last Changed Rev:/;
+
+            for (var i in lines) {
+                if (re.test(lines[i])) {
+                    revision = lines[i].replace(re, '').trim();
+                    break;
+                }
+            }
+            console.log('At revision：' + revision);
         });
         p_svnInfo.on('close', afterSvnInfo);
 
@@ -51,13 +58,13 @@ function afterPackage(code) {
             console.error(data + "");
         });
     } else {
-        console.log('打包出错');
+        console.log('Build error');
     }
 }
 
 function afterUpdate(code) {
     if (code == 0) {
-        console.log('开始打包...');
+        console.log('building......');
         var p_package = spawn('cmd.exe', ['/c', 'ant']);
         p_package.stdout.on('data', function (data) {
             console.log(data + "");
@@ -69,7 +76,7 @@ function afterUpdate(code) {
     }
 }
 
-console.log('svn更新……');
+console.log('svn updating......');
 var p_package = spawn('cmd.exe', ['/c', 'svn', 'update']);
 p_package.stdout.on('data', function (data) {
     console.log(data + "");
